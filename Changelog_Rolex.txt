@@ -1,0 +1,104 @@
+=======================
+     06-13-2018
+=======================
+	* Fixed slowly charging message on Lockscreen
+	
+	* Updated LiquidOTA repository links
+
+
+=======================
+     06-11-2018
+=======================
+
+
+   * frameworks/base/
+9e652db8fdf Revert "base: Fix header images padding on content padding"
+
+   * packages/apps/LiquidOTA/
+6985416 LiquidOTA: liquid ota update notification icon
+
+=======================
+     06-10-2018
+=======================
+
+
+   * hardware/lineage/interfaces/
+f66d76e livedisplay: Correct macro copypasta
+
+   * packages/apps/Jelly/
+6432e80 Jelly: Add support for multiple windows
+
+=======================
+     06-09-2018
+=======================
+
+
+   * hardware/lineage/interfaces/
+ac865c8 livedisplay: Remove unused using statements
+412bc94 livedisplay: Move LegacyMMController inclusion to impl
+
+=======================
+     06-08-2018
+=======================
+
+
+   * packages/apps/LiquidOTA/
+c0fbe1d Fix strings
+
+   * vendor/liquid/
+109b8b8c vendor: make official compatible with OTA
+
+=======================
+     06-07-2018
+=======================
+
+
+   * packages/apps/LiquidOTA/
+6c8486f Update Italian translation
+074e4e1 LiquidOTA: initial liquid remix refactor
+
+=======================
+     06-06-2018
+=======================
+
+
+   * build/make/
+9d6ee65ab Merge tag 'android-8.1.0_r30' into oc-mr2
+
+   * frameworks/av/
+e07fc27b1 Merge tag 'android-8.1.0_r30' into oc-mr2
+
+   * frameworks/base/
+b9bc4c0ff25 Merge tag 'android-8.1.0_r30' into oc-mr2
+
+   * frameworks/opt/telephony/
+4284e55d0 Merge tag 'android-8.1.0_r30' into oc-mr2
+
+   * hardware/interfaces/
+027a33d4 Merge tag 'android-8.1.0_r30' into oc-mr2
+
+   * packages/providers/MediaProvider/
+3969a01 Merge tag 'android-8.1.0_r30' into oc-mr2
+
+   * system/bt/
+245570a9 Merge tag 'android-8.1.0_r30' into oc-mr2
+
+=======================
+     06-05-2018
+=======================
+
+
+=======================
+     06-04-2018
+=======================
+
+
+   * packages/apps/FMRadio/
+9a74e6d Automatic translation import
+
+   * packages/apps/Jelly/
+5a0b5cc Automatic translation import
+
+   * packages/apps/WallpaperPicker/
+3a8d597 Automatic translation import
+

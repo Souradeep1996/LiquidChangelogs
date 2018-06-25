@@ -1,104 +1,287 @@
 =======================
-     06-13-2018
-=======================
-	* Fixed slowly charging message on Lockscreen
-	
-	* Updated LiquidOTA repository links
-
-
-=======================
-     06-11-2018
+     06-25-2018
 =======================
 
 
    * frameworks/base/
-9e652db8fdf Revert "base: Fix header images padding on content padding"
+fb864bbc815 Add a ripple effect to the power menu items
+6ede5fcfa42 SystemUI: CellularTile: Don't call showDetail() when device is locked
+ad551d26836 Allow details view for Cellular tile when tile title is disabled
+caa024b0382 Use bool var judge whether the navi-keys enabled
+be09505819a Add onLongClick functions to calendar/clock in qs footer
+943e6ab344c Qs footer calendar/alarm: fix onClick ripple and cleanup code
+ca9af878cfa Immersive tile: more cleanup
 
-   * packages/apps/LiquidOTA/
-6985416 LiquidOTA: liquid ota update notification icon
+   * packages/apps/DUI/
+ac47e34 Smartbar: new button vectors
 
-=======================
-     06-10-2018
-=======================
-
-
-   * hardware/lineage/interfaces/
-f66d76e livedisplay: Correct macro copypasta
-
-   * packages/apps/Jelly/
-6432e80 Jelly: Add support for multiple windows
-
-=======================
-     06-09-2018
-=======================
-
-
-   * hardware/lineage/interfaces/
-ac865c8 livedisplay: Remove unused using statements
-412bc94 livedisplay: Move LegacyMMController inclusion to impl
-
-=======================
-     06-08-2018
-=======================
-
-
-   * packages/apps/LiquidOTA/
-c0fbe1d Fix strings
+   * packages/apps/LiquidLounge/
+28412cd LiquidLounge: fix custom header image reset bug
 
    * vendor/liquid/
-109b8b8c vendor: make official compatible with OTA
+86996669 Vendor: Add Dosis Regular font
 
 =======================
-     06-07-2018
+     06-24-2018
 =======================
 
+
+   * packages/apps/LiquidLounge/
+cd1cdf9 Remove unused imports and cleanup
+
+   * vendor/liquid/
+8a43555d Vendor: Add some more accents [2/3]
+5a9355fb Update prebuilt Turbo apk from latest Marlin May img
+a0602029 apns-conf: Remove obsolete APNs for PT carriers
+
+=======================
+     06-23-2018
+=======================
+
+
+   * bionic/
+4e8aa6c79 bionic: Sort and cache hosts file data for fast lookup
+
+   * device/lineage/sepolicy/
+c9b0d95 sepolicy: add rules for updater and update_engine
+37422f7 common: add update_engine policies
+
+   * device/qcom/sepolicy/
+03f82c7 legacy: allow gnss to create dir for xtra data
+c802dc8 legacy: Add rules for init.qcom.bt.sh
+983c9ba common: Fix labelling of lcd-backlight
+b8d520e sepolicy: Allow mm-qcamerad to access v4L "name" node
+d9b7a9c sepolicy: Fix video4linux "name" node labeling
+d8534c0 sepolicy: allow vold to read persist dirs
+496ef2b sepolicy: qti_init_shell needs to read dir too
+4dccbfc msm8916: Label the FRP partition
+9ef3df7 legacy: Make WCNSS props readable to hci_qcomm_init
+2d89870 legacy: Resolve msm8992/4 perfd denials
+51cac7a legacy: perf: allow checking for existence of other processes (signull)
+e96ce00 legacy: Label BT_QCA6174 sysfs files
+e2f8e3c legacy: Fix msm8992/4 mm-qcamerad sysfs denials
+6061d4e legacy: Fix labelling msm8992/4 SSR sysfs
+
+   * frameworks/base/
+33c72275c09 Add Google Sound Search tile
+53b672c22d9 Add dynamic Immersive Mode tile
+e399af21546 base: SystemUI: split calendar from clock in qs footer
+2c810080d4d Don't spoil printservice log if not needed
+19e9f35266b Disable warning in StaticLayout
+b9ca4c68dc5 Resolve status bar battery percentage tints
+c152d36a173 Resolve status bar VPN icon tints
+2dc408e95c0 Fix janky traffic indicator tint
+542e46457c3 Fix left clock glitch on landscape and cleanup code
+05047a358ee base: Start ScreenStateService after reboot
+69c52bb3d73 Update clock style vectors
+1be8721e869 LS: Add spidey clock style [1/2]
+351733e2dca Themes: fix vpn status dialog
+92dda21d194 pm: Fix typo in error
+84020f4f55c Themes: expose tooltip text colors
+8e610a1bc47 BatteryStats: Update WifiState even if EnergyInfo is invalid
+37f2ca94b16 Fix Screenrecord share/delete buttons not working
+65b552f31fa Status bar: Update notification count icons
+89b46d1784c Show infinity for large notification counts
+8de0b637cda SystemUI: small optimization for notification icon numbers
+2233248db20 systemui: Forward-port notification counters
+1c4668933d0 Revert "Show infinity for large notification counts"
+e8c3885708f Add a slight tint to the power menu when wallpaper tint is off
+c5c24bb2116 Lockscreen clocks: add default size option for Date view [1/2]
+f2736c184c0 Work smarter not harder
+3d7dd47fd5a Base: Add some more accents [3/3]
+574e3594fa8 Cleanup: move theme/accent manager stuff out of StatusBar class
+6c325fb298c base: SystemUI: Show clock on right in QS panel if center clock is set
+04b5fab1db0 lockscreen : differentiate hour from minutes in digital bold style clock
+ce18452032e lockscreen : reduce clock, date and owner info's text size only if small digital clock is selected
+fec9f57a0f9 lockscreen : Add small size style [1/2]
+0ca0ebe76b8 Allow for the 'Big Clock' analog padding to be changed per device
+cfb86af8b1f Fix LS weather layout with clock styles
+388bb9b24a1 Ensure that locked recents apps are respected
+d3807c5440c Stock recents task header: more space for app title
+45d0ea234ed Stock recents: use round corners for headers
+d385084eeff Aosp Recents: bigger icons, dynamic mediaplaying and alarm clock infos
+8c1f71fcd28 Stock Recents: fix fc on header app icon longpress
+66ee8b59f37 Recents: Fix NPE with locked tasks
+129c8dee4a4 Recents kill app: move it to app detail view header
+a916f804779 Recents: allow single tap on app icon to show app info overlay
+fe172629d3d SystemUI: Support recents task locking
+8514c2ed33e Allow to kill any app from recents panel in a safe way
+782e16b3523 Revert "Stock Recents: fix fc on header app icon longpress"
+aa735296f37 Revert "Remove other options off the Caffeine QS Tile but infinite"
+d143259294f Added toast when a screenshot is deleted
+e82cda00658 Fix possible NPE
+6290d8f2dd6 screenrecord: add support for 18:9 resolutions
+1d63714d7df Simplify successful screenrecord notification strings
+ac6f59caeb0 Screenrecord: show chrono and total recording duration/size
+344b181cd2c Screenrecord notification: tap on it to open the video
+1dc4c2f4498 Screenrecord red hint: long press on it to move to the opposite side
+d1a2b5a99f8 Screenrecord: show a Share/Delete notification when stopped
+cb3c00883b4 Screenrec: let hide the red stop button but keep it clickable
+6272ff62fe0 Multi ScreenRecord tile, blinking stop button, screenrecord service improvements [1/2]
+f3902433ae2 base: Add special captive portal servers for chinese
+ce09ef722aa Unlock keystore with fingerprint after reboot (1/2)
+f0875914757 Force Expanded Notifications [1/2]
+c352fd9e7b2 Power menu scrollview improvements
+a5b220c9d51 Set scrollview on the power menu
+cc3e4ab7e6f Edit Icon Toggle [1/2]
+460c0eb792a Fix CustomTile NPE in handleRefreshState
+97694950006 Fix screenshot not saved when appending appname with some languages
+38f2270aa2d Remove useless dream manager isDozing check
+000e29c45f3 Ambient music: skip useless setDozing calls
+daf95142540 Cleanup Ambient music ticker [1/2]
+e871021c44a Expose faststroller text for themes
+0ab087141fc Lockscreen/ambient analog clock: improve design
+ed0bef57c61 Ambient music ticker AoD: make it compatibile with double tap sensor
+4bf58f88b25 Ensure the clockview is aligned correctly each time
+8867c3e018f Ambient music double tap to skip track: add AoD compatibility
+fd9df72975b SystemUI: Add Turkish translation
+
+   * frameworks/opt/telephony/
+b8dce9e17 Add ContentObserver when sms sent limit changed
+36985eec0 Don't assume 3GPP as active app on CDMA with LTE device
+
+   * packages/apps/LiquidLounge/
+230ab26 Fling reset button: more fixes
+9611c0e DUI: Update reset smartbar/fling options
+6340ff6 Custom seekbar pref: allow to refresh values
 
    * packages/apps/LiquidOTA/
-6c8486f Update Italian translation
-074e4e1 LiquidOTA: initial liquid remix refactor
+7639f3d Add Turkish translation
+f65a653 LiquidOTA: liquid ota update notification icon
+
+   * packages/apps/Settings/
+baf02dab6e Improve Ambient music ticker strings
+cbd722c28e Add Turkish translation
+b32ae36f46 Settings: Add extended theme [2/3]
+d037b9e28e Cleanup Ambient music ticker [2/2]
+1904d24f9b Revert "SimSettings: sync with LOS"
+20bffad9f2 Revert "Revert "Remove Sleep options from Advanced wifi.""
+
+   * system/sepolicy/
+c8b6f333 sepolicy: allow update_engine to bypass neverallows for backuptool
 
 =======================
-     06-06-2018
+     06-22-2018
+=======================
+
+
+   * device/lineage/sepolicy/
+41ac4fa sepolicy: Label aw2013 HIDL light HAL
+
+   * hardware/lineage/interfaces/
+1951e03 lineage/interfaces: Add aw2013 lights HIDL HAL implementation
+
+   * hardware/qcom/audio-caf/msm8974/
+e43a121a visualizer: Build with BOARD_VNDK_VERSION
+3c29a7e5 voice_processing: Build with BOARD_VNDK_VERSION
+9ee58e79 post_proc: Build with BOARD_VNDK_VERSION
+ded474f6 mm-audio: Build with BOARD_VNDK_VERSION
+4325e02f hal: Build with BOARD_VNDK_VERSION
+
+   * hardware/qcom/media-caf/msm8974/
+7d2d0cb51 Build libstagefrighthw with BOARD_VNDK_VERSION
+
+   * packages/apps/LiquidLounge/
+5e2130d LS: Add spidey clock style [2/2]
+9abcfa0 Forward-port notification counters
+cd19a4c Lockscreen clocks: add default size option for Date view [2/2]
+b8d4e45 LiquidLounge: Add some more accents [1/3]
+b9ead81 lockscreen : Add small size style [2/2]
+252663a Unlock keystore with fingerprint after reboot (2/2)
+058e504 Force Expanded Notifications [2/2]
+
+=======================
+     06-21-2018
+=======================
+
+
+=======================
+     06-20-2018
+=======================
+
+
+   * frameworks/av/
+17918fc66 Increase max screen recording time to 1 hour
+
+   * prebuilts/clang/host/linux-x86/clang7/
+37990b5 Add the Scudo shared library prebuilt modules.
+
+=======================
+     06-19-2018
 =======================
 
 
    * build/make/
-9d6ee65ab Merge tag 'android-8.1.0_r30' into oc-mr2
+a720dd059 changelog: fix typo
 
-   * frameworks/av/
-e07fc27b1 Merge tag 'android-8.1.0_r30' into oc-mr2
+   * hardware/lineage/interfaces/
+2b941ed livedisplay: Fix uninitialized default PA
 
-   * frameworks/base/
-b9bc4c0ff25 Merge tag 'android-8.1.0_r30' into oc-mr2
+   * hardware/qcom/fm/
+4a8b046 Automatic translation import
 
-   * frameworks/opt/telephony/
-4284e55d0 Merge tag 'android-8.1.0_r30' into oc-mr2
-
-   * hardware/interfaces/
-027a33d4 Merge tag 'android-8.1.0_r30' into oc-mr2
-
-   * packages/providers/MediaProvider/
-3969a01 Merge tag 'android-8.1.0_r30' into oc-mr2
-
-   * system/bt/
-245570a9 Merge tag 'android-8.1.0_r30' into oc-mr2
-
-=======================
-     06-05-2018
-=======================
-
-
-=======================
-     06-04-2018
-=======================
-
-
-   * packages/apps/FMRadio/
-9a74e6d Automatic translation import
+   * packages/apps/Gallery2/
+ed269178c Automatic translation import
 
    * packages/apps/Jelly/
-5a0b5cc Automatic translation import
+f96f9a5 Automatic translation import
 
-   * packages/apps/WallpaperPicker/
-3a8d597 Automatic translation import
+=======================
+     06-18-2018
+=======================
+
+
+=======================
+     06-17-2018
+=======================
+
+
+   * bionic/
+84b53a40f linker: Make shim reference path absolute
+7064ccccc linker: Remove unused find_libraries declaration
+4ef59eab7 linker: Provide soinfo path of the shimmed binary
+f3b378e2a bionic: Let popen and system fall back to /sbin/sh
+
+   * build/make/
+ae947d3d2 core: Remove deprecated kernel header dependency path warning
+
+   * packages/apps/DUI/
+4eac3f0 DUI: fix button custom image icon not being loaded on encrypted device
+ca28574 Smartbar: keep pressing on ime arrows to move kb cursor
+
+   * packages/apps/LiquidLounge/
+e5b304b Edit Icon Toggle [2/2]
+
+   * packages/apps/SlimRecents/
+4a18786 Improve compatibility with LMT and other apps that don't preload recents
+
+   * vendor/liquid/
+4195801a lineage: qcom: Set thermal & vr HAL pathmaps
+6bfda1cd repopick: Update SSH queries result to match HTTP queries
+5113536b lineage: qcom: Enable TARGET_USES_COLOR_METADATA for msm8937 & msm8953
+ba9ddaa5 backuptool: Temporarily render version check permissive
+50766f13 vendor: increase build number (9.1.2)
+
+=======================
+     06-16-2018
+=======================
+
+
+   * hardware/lineage/interfaces/
+995cd62 livedisplay: Use RAII semantics for ColorBackend initialization
+35484bb livedisplay: Move initialization of mActiveModeId to constructor
+af12c6e livedisplay: Convert controller singletons to regular objects
+21c71ae livedisplay: Move Color::check function to implementation
+cfd7b99 livedisplay: Don't use a singleton for Color service
+d6be15d livedisplay: Fix bogus print
+
+   * packages/apps/Dialer/
+395ed88e7 Update Turkish translation
+49a1a8c4a Update Turkish translation
+
+   * packages/apps/LiquidLounge/
+4958623 Add Turkish translation
+
+   * packages/providers/DownloadProvider/
+90c044f Add Turkish translation
 

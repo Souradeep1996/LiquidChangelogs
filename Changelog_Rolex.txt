@@ -1,224 +1,163 @@
 =======================
-     07-15-2018
+     08-13-2018
 =======================
 
 
 =======================
-     07-14-2018
+     08-12-2018
 =======================
 
 
    * build/make/
-c062df53f build: Allow devices to provide prebuilt vbmeta image
-7afda3133 build: Allow building disabled vbmeta images in signing process
+53391ba63 core: config: Use host ijar if requested
+25ded3f53 dex2oat: disable multithreading for WSL
+a2d379b12 Add detection for WSL
+3e9333098 Adapt ijar for WSL
+
+=======================
+     08-11-2018
+=======================
+
+
+   * hardware/lineage/interfaces/
+9bcc1bd Update makefiles from anywhere.
+
+=======================
+     08-10-2018
+=======================
+
+
+   * build/make/
+34e3a51bc build: Add vendor.prop capability
+75561af0d sign_target_files: also replace fingerprint in system/vendor/build.prop
+f62b5a2d6 core: Dont overwrite build.prop when TARGET_COPY_OUT_VENDOR=system
 
    * frameworks/av/
-7250fa146 Camera: CameraHardwareInterface: Releasing mHIDLMemoryMapLock in QdataCallback
-912df077b Camera:CameraService: Added lock on mHIDLMemPoolId in QDataCallback..
+e6bf87bd8 NdkMediaCodec: add AMediaCodec_getBufferFormat
+
+=======================
+     08-09-2018
+=======================
+
 
    * frameworks/base/
-b6d6822aadd UpdateEngine: Add perf mode binder interface
+71d35fa22dd camera: Check if aux camera whitelist is set before restricting cameras
+4d05a4d4107 Camera: Longshot with Burst Functionality.
+98b7d49f686 Camera: Extend face detection
+d9e1c43f2c1 Fix Photosphere/Camera FCs
+934f82660e4 Camera: Expose Aux camera to apps present in the whitelist
+5a8119d950d Revert "Base: fix facelock crash when lock screen is disabled"
+6bff6b2a070 Revert "Camera: Expose Aux camera to apps present in the whitelist"
+b5c238d2be3 Revert "Camera: Force HAL1 for predefined package list."
+dd0b4be4b1a base: cleanup nav gestures code
+0642abd992e base: add long press home handling to nav gestures
+5db58ec4b5f base: Improve nav gestures
 
-   * frameworks/native/
-8c8c80922 native: drop hwui properties on O-MR1
+   * packages/apps/Messaging/
+3686c41 Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+af0e887 Revert "Messaging: Request external storage permission before handling shared files"
+
+=======================
+     08-08-2018
+=======================
+
+
+   * build/make/
+565bb1f2e Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/build into oc-mr2
+
+   * frameworks/av/
+4f2fe6566 Merge tag 'android-8.1.0_r43' into oc-mr2
+
+   * frameworks/base/
+893bf4bd9a4 SystemUI: Enable corner padding
+0513b26a733 Merge tag 'android-8.1.0_r43' into oc-mr2
+
+   * frameworks/opt/telephony/
+bfa89faa9 Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD
+
+   * packages/apps/PackageInstaller/
+0a2b3935 Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into HEAD
+
+   * packages/apps/Settings/
+7a3ec0e91f Wired/BT headset: make ringtone audio focus customizable [2/2]
+
+   * packages/providers/DownloadProvider/
+aee8c12 Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD
+
+   * packages/services/Telephony/
+1d7b4ce6 Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/packages/services/Telephony into oc-mr2
+
+   * system/bt/
+415a2fb6 Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/system/bt into HEAD
+
+   * system/vold/
+5db0abe Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/system/vold into HEAD
+
+=======================
+     08-07-2018
+=======================
+
+
+   * frameworks/base/
+06bd0829c6e Wired/BT headset: make ringtone audio focus customizable [1/2]
 
    * hardware/qcom/power/
-64de35f power: Allow devices disabling power stats completely
-
-   * packages/apps/LiquidLounge/
-c9f40ee Android P Volume panel Dim (2/2)
-
-   * vendor/liquid/
-5d4b67f1 apns: sprint mms: mms.sprintpcs.com > oap7.sprintpcs.com
-86dc299a apns: sprint: n.ispsn -> x.ispsn
-dda91619 build: Add support for sdm845 platform
+34c7410 power: Fix several typos in power profiles
 
 =======================
-     07-13-2018
-=======================
-
-
-   * external/libdrm/
-175278e5 libdrm: Avoid additional drm open close
-
-   * frameworks/base/
-a6acc8194e9 Android P Volume panel Dim (1/2)
-79ab91b4af9 fwb: More additions to Android P Volume Panel
-889a2b2111d Implement Android P Volume Panel
-86937520db0 Add Functionality to control High Brightness Mode [1/2]
-
-   * packages/apps/LiquidLounge/
-dc7fcef Fix gestures title in lounge
-
-=======================
-     07-12-2018
-=======================
-
-
-=======================
-     07-11-2018
-=======================
-
-
-=======================
-     07-10-2018
+     08-06-2018
 =======================
 
 
    * hardware/qcom/fm/
-8bfd71d Automatic translation import
+26b8136 Automatic translation import
 
-   * packages/apps/Eleven/
-3f6ab56 Automatic translation import
+   * packages/apps/Camera2/
+0bc9ca1a6 Automatic translation import
 
-   * packages/apps/FMRadio/
-08e0450 Automatic translation import
+   * packages/apps/ExactCalculator/
+178b09e Automatic translation import
 
    * packages/apps/Gallery2/
-261f4bea0 Automatic translation import
+127d42cf7 Automatic translation import
 
    * packages/apps/Jelly/
-710ad2c Automatic translation import
+8401c7d Automatic translation import
 
-   * packages/apps/LiquidLounge/
-5812348 Increase gesture anywhere width to 40px [2/2]
-29ba080 Gesture Anywhere: Fix wrong value being set.
-7d4f462 Gesture Anywhere [2/3]
+   * packages/apps/Messaging/
+f3b4387 Automatic translation import
 
-   * system/update_engine/
-7e347c2 update_engine: Add performance mode
+   * packages/apps/WallpaperPicker/
+add6c7b Automatic translation import
 
 =======================
-     07-09-2018
+     08-05-2018
 =======================
 
-   * art/
-3f4020b8d art: extend the supported cpu_variant list for arm64
 
-   * bionic/
-66dc4131d libc: kryo300 specific memory routine
-84d8e1244 linker: Don't involve shim in for_each_dt_needed
-9256422f3 linker: Ensure active matching pairs
+   * external/f2fs-tools/
+3aac42a fsck: Fix conflicts with libext2_quota
+e4ea681 fsck: Update libf2fs_fsck source file list
+2dcd2b0 Android.bp/mk: update strings to reflect v1.11.0 release
 
-   * build/make/
-52ba4ab5f Merge tag 'android-8.1.0_r36' into oc-mr2
-6aa5b47cb build: recovery: add vendor to exclusion list
-b9a4dcd07 Add support for ZSH arrays
-2337eaca1 changelog: fix typo
+   * packages/apps/Dialer/
+9203fc81d Show proper call duration
+f0efc1b45 Control dialer's incoming call proximity sensor check via an overlay
+b45fb4dcb Dialer: hide single tab ViewPager
+e407ac5cb IMS: Make modifications in Dialer app to incorporate IMS related call types as well
+018bd1a84 Dialer: support sub and call-type filters for msim call log
 
-   * build/soong/
-e5fb6d3 soong: Add kryo300 cpu variant to build/song
-0633e85 Allow providing flex and bison binaries
+=======================
+     08-04-2018
+=======================
 
-   * device/qcom/sepolicy/
-6b0ebe3 Allow binderized keymaster HAL access to firmware files.
-5ced49c sepolicy: Allow perf HAL to set freq props
-
-   * external/DUtils/
-8471d35 Last app: code cleanup and don't skip Settings
-
-   * frameworks/av/
-062c410f1 Merge tag 'android-8.1.0_r36' into oc-mr2
-427625a1c audiopolicy: update APM to use custom audio policy configuration
 
    * frameworks/base/
-b0397db08f6 Gesture Anywhere: Add missing dimens
-19f0193a844 Gesture Anywhere : Materiallize gesture anywhere layout - Added close fab button - Added 3 colors gradient layout background - overall improved UI - Exposed all colors for the themers
-baf26d29a09 Gesture Anywhere : Fix GA fc and saving the gesture cache
-45f20dbf06f Gesture Anywhere: Increase width to 40px [1/2]
-7f5957c88af Gesture Anywhere [1/3]
-a4b3fffc9e8 Merge tag 'android-8.1.0_r36' into oc-mr2
-8ea15368e4f base: limit direct share targets to reduce lag
-770b6b75423 Revert "base: Start ScreenStateService after reboot"
-ce753cec491 Keyguard: Fix Turkish translation
+9ca421be564 SystemUI: QS: Fix qs tiles visibility
 
-   * frameworks/native/
-013987797 Merge tag 'android-8.1.0_r36' into oc-mr2
-
-   * frameworks/opt/telephony/
-5bb733587 Revert "Don't assume 3GPP as active app on CDMA with LTE device"
-
-   * hardware/interfaces/
-bf8847df camera: Only link and use vendor.qti.hardware.camera.device if specified
-57d58164 Camed HAL extension: Added support in HIDL for Extended FD.
-61ade552 wifi: Handle errors other than wifi_error enum.
-
-   * packages/apps/Bluetooth/
-8d78aba1 Merge tag 'android-8.1.0_r36' into oc-mr2
-
-   * packages/apps/Contacts/
-333eda541 Revert "Automatically set SIM number to my profile"
-
-   * packages/apps/Launcher3/
-e9a009b79 Update Turkish translation
-164ba3f96 Add Turkish translation
-2063de621 Update Italian translation
-
-   * packages/apps/OmniSwitch/
-d75a473 OmniSwitch: oh so colorful are those task headers
-843fa2b Automatic translation import
-
-   * packages/providers/MediaProvider/
-e30a812 MediaProvider: adaptive-icon
-f4e208e Fix mounting of non-FAT formatted SD cards (2/2)
-1928ec3 Add READ_EXTERNAL_STORAGE permission Logcat shows the following error,
-
-   * packages/services/OmniJaws/
-4f75788 OmniJaws: fix theme for widget configure acitvity
-22ab245 OmniJaws: reduce minimal size of widget
-aa2dafe OmniJawas: add current weather condition widget
-
-   * packages/services/Telecomm/
-91690e06 Telecomm: Account for default data sub ID when setting MSIM audio params
+   * packages/apps/Settings/
+43c1cad917 settings: fuelgauge: add back battery level animation
 
    * packages/services/Telephony/
-7f8751ff Merge tag 'android-8.1.0_r36' into oc-mr2
-
-   * system/bt/
-cc5796cf Merge tag 'android-8.1.0_r36' into oc-mr2
-
-   * system/core/
-92e45f521 camera: Add L-compatible camera feature enums
-
-   * system/security/
-169fff0 key_store:Using euid instead of uid when upgrade wifi blobs
-
-   * vendor/liquid/
-ec6ef8c8 Add Iliad APN
-60bce9c1 apns: Add missing sprint roaming APN and set bearer_bitmasks
-7580e330 apns: Adjust Sprint LTE internet to allow tether
-
-=======================
-     07-08-2018
-=======================
-
-
-   * packages/apps/Launcher3/
-f860ff27a Automatic translation import
-
-=======================
-     07-07-2018
-=======================
-
-
-   * hardware/qcom/power/
-2d1ce22 power-845: Fix compilation errors
-9e76194 Fix interaction boost higher cpu freq perflock
-b06e15f power: Adding hints for SDM845
-
-   * packages/apps/Launcher3/
-222f48e55 Use dark theme for chocolateUI too
-
-=======================
-     07-06-2018
-=======================
-
-
-   * hardware/qcom/display-caf/msm8998/
-9fa84679e gralloc: Add missing BT601_6_625 handing
-20bd3e874 gralloc1: Add support for secure display.
-6c718aacd liblight: Use char array instead of char pointer array for file name
-
-   * system/libhidl/
-c5df720 Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
+9a93843d Use proper summary for network select list preference on dsds/dsda/tsts
 
